@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:id="@+id/background">
 
     <Button
         android:id="@+id/button_red"
@@ -12,19 +15,17 @@
         android:layout_height="wrap_content"
         android:text="Красный"
         android:backgroundTint="@color/red"
-<!--        tools:layout_editor_absoluteX="158dp"-->
-<!--        tools:layout_editor_absoluteY="22dp" -->
-        />
+        android:onClick="red"
+         />
 
     <Button
         android:id="@+id/button_yellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Жёлтый"
         android:backgroundTint="@color/yellow"
-<!--        tools:layout_editor_absoluteX="158dp"-->
-<!--        tools:layout_editor_absoluteY="305dp" -->
-        />
+        android:onClick="yellow"
+        android:layout_margin="20dp"
+        android:text="Жёлтый" />
 
     <Button
         android:id="@+id/button_green"
@@ -32,8 +33,6 @@
         android:layout_height="wrap_content"
         android:text="Зелёный"
         android:backgroundTint="@color/green"
-<!--        tools:layout_editor_absoluteX="158dp"-->
-<!--        tools:layout_editor_absoluteY="391dp" -->
+        android:onClick="green"
         />
-
 </LinearLayout>
