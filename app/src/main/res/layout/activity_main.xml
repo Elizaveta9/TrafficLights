@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +12,7 @@
         android:id="@+id/button_red"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Красный"
+        android:text="@string/red"
         android:backgroundTint="@color/red"
         android:onClick="red"
          />
@@ -25,13 +24,13 @@
         android:backgroundTint="@color/yellow"
         android:onClick="yellow"
         android:layout_margin="20dp"
-        android:text="Жёлтый" />
+        android:text="@string/yellow" />
 
     <Button
         android:id="@+id/button_green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Зелёный"
+        android:text="@string/green"
         android:backgroundTint="@color/green"
         android:onClick="green"
         />
